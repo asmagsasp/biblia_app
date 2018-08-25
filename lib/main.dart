@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Bíblia Católica',
       theme: new ThemeData.dark(),
       home: new SplashScreen()
     );

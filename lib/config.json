@@ -1,0 +1,70 @@
+{
+  "name": "Bible",
+  "css_prefix_text": "",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "pt5lb2orj9ms0n4yyxjavefdukcv1scl",
+      "css": "heart",
+      "code": 59392,
+      "src": "modernpics"
+    },
+    {
+      "uid": "d02a803276d9e1f42b7393964aa22ce9",
+      "css": "heart-1",
+      "code": 59393,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "862129f833b09f3d34ae39acf8484a7b",
+      "css": "heart-broken",
+      "code": 61480,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "b19ac67070bc44e310990016288e449c",
+      "css": "heart-2",
+      "code": 59394,
+      "src": "linecons"
+    },
+    {
+      "uid": "ff933ecda3a1da53071ee6ec224ef8c9",
+      "css": "heart-3",
+      "code": 59395,
+      "src": "iconic"
+    },
+    {
+      "uid": "acae2d2db2ebe97429c6eddc2f7b0cd2",
+      "css": "heart-empty",
+      "code": 59396,
+      "src": "iconic"
+    },
+    {
+      "uid": "3b00728aa97ad1a2581d414bd9d650bc",
+      "css": "heart-4",
+      "code": 59397,
+      "src": "typicons"
+    },
+    {
+      "uid": "hi76m8qggwn5lbl286oeqp64q0n8kusy",
+      "css": "heart-filled",
+      "code": 59398,
+      "src": "typicons"
+    },
+    {
+      "uid": "0eabe5f8d71cc838484ff39436426d2d",
+      "css": "heart-5",
+      "code": 59399,
+      "src": "entypo"
+    },
+    {
+      "uid": "d18071bbf8f0a8cec8d1f556c91c6af0",
+      "css": "heart-empty-1",
+      "code": 59400,
+      "src": "entypo"
+    }
+  ]
+}
