@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:async';
 import 'package:http/http.dart' as http;
-import 'bible_icons.dart';
+import 'package:biblia_app/src/icons/bible_icons.dart';
 import 'capitulos.dart';
-
-class Livro {
-  var nome;
-  var id;
-  Livro(this.nome, this.id);
-}
+import 'package:biblia_app/src/shared/Livro.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -23,7 +18,7 @@ class StateHomePage extends State<HomePage>
 
   Future<Map> getbiblia() async {
     Map data = Map();
-    http.Response response =
+    var response =
         await http.get(url, headers: {"Content-Type": "application/json"});
 
     data = jsonDecode(response.body);
@@ -63,18 +58,18 @@ class StateHomePage extends State<HomePage>
   buildListTiles(BuildContext context, var nome, var pos) {
     return new MergeSemantics(
       child: new ListTile(
-        title: new Text(nome),
-        leading: new Icon(Icons.book),
+        title: new Text(nome, style: TextStyle(fontWeight: FontWeight.bold)),
+        leading: new Icon(Icons.bookmark, color: Colors.yellowAccent,),
+        onTap: () {
+          var route = new MaterialPageRoute(builder: (context) => new Capitulos( pos.toString(), nome ));
+          Navigator.push(context, route);
+        },
         trailing: new IconButton(
             icon: new Icon(
               Bible.heart,
               color: Colors.white,
             ),
             onPressed: () {
-
-              var route = new MaterialPageRoute(builder: (context) => new Capitulos( pos.toString() ));
-              Navigator.push(context, route);
-
             }),
       ),
     );

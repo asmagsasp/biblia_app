@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'splash_screen.dart';
+import 'package:biblia_app/src/pages/splash_screen.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
